@@ -1,0 +1,20 @@
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        int h = sc.nextInt();
+        int m = sc.nextInt();
+        if(h<24){
+        int a = 23;
+        int b = 60;
+        int t1 = a-h;
+        int t2 = b-m;
+        System.out.println(t1 + "::" + t2);
+        }
+         if(h>24){
+             int a = 24;
+             int t1 = a-h;
+             System.out.println(t1 + "::"+ m);
+         }
+    }
+}
